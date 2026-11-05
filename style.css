@@ -1,5 +1,4 @@
-/* style.css - ملف التنسيق الوحيد للموقع.
-   الخطوط تُعدَّل من القاعدة الأولى، ولون حقول الإدخال من قاعدة input.txt */
+
 body, table, input, button, legend, label { font-family: Tahoma, Arial, sans-serif; font-size: 16px; }
 input.txt { color: #1f2a33; background-color: #ffffff; border: 1px solid #8aa0a8; padding: 6px; width: 260px; }
 body { margin: 0; background-color: #eef2f4; color: #1f2a33; direction: rtl; }
