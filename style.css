@@ -1,0 +1,34 @@
+/* style.css - ملف التنسيق الوحيد للموقع.
+   الخطوط تُعدَّل من القاعدة الأولى، ولون حقول الإدخال من قاعدة input.txt */
+body, table, input, button, legend, label { font-family: Tahoma, Arial, sans-serif; font-size: 16px; }
+input.txt { color: #1f2a33; background-color: #ffffff; border: 1px solid #8aa0a8; padding: 6px; width: 260px; }
+body { margin: 0; background-color: #eef2f4; color: #1f2a33; direction: rtl; }
+#wrap { width: 960px; max-width: 96%; margin: 0 auto; }
+#header { background-color: #1f2a33; color: #ffffff; padding: 14px 20px; overflow: hidden; }
+#header img { float: right; margin-left: 14px; }
+h1 { margin: 8px 0; font-size: 28px; }
+h2 { color: #0f6e78; font-size: 22px; border-bottom: 3px solid #e8a317; padding-bottom: 4px; }
+h3 { font-size: 18px; margin: 10px 0 4px; cursor: pointer; }
+#nav { list-style: none; margin: 0; padding: 0; background-color: #0f6e78; overflow: hidden; }
+#nav li { float: right; }
+#nav a { display: block; padding: 12px 22px; color: #ffffff; text-decoration: none; font-weight: bold; }
+#nav a:hover { background-color: #e8a317; color: #1f2a33; }
+.box { background-color: #ffffff; margin: 16px 0; padding: 14px 20px; border: 1px solid #cfd8dc; }
+.btn, input[type="button"], input[type="submit"] { background-color: #e8a317; color: #1f2a33; border: 0; padding: 9px 22px; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; }
+table.grid { width: 100%; border-collapse: collapse; }
+.grid th { background-color: #0f6e78; color: #ffffff; padding: 8px; }
+.grid td { border: 1px solid #cfd8dc; padding: 8px; text-align: center; }
+img.car { border: 1px solid #cfd8dc; margin-left: 8px; }
+tr.details { display: none; }
+tr.details td { background-color: #f4f9fa; text-align: right; }
+tr.picked td { background-color: #fff6dd; }
+fieldset { border: 1px solid #8aa0a8; padding: 12px; }
+legend { font-weight: bold; color: #0f6e78; }
+.error { color: #b3261e; margin-right: 8px; font-weight: bold; }
+.hint, .sample, #footer { color: #5f737b; font-size: 14px; }
+.todo { background-color: #fff3c4; padding: 0 4px; }
+#bookingBox { display: none; }
+#resultBox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(31, 42, 51, 0.75); }
+#resultBox .win { background-color: #ffffff; width: 640px; max-width: 92%; max-height: 86%; overflow: auto; margin: 4% auto; padding: 16px 22px; border-top: 6px solid #e8a317; }
+.total { font-size: 20px; font-weight: bold; color: #0f6e78; }
+#footer { text-align: center; padding: 14px; }
