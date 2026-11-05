@@ -1,4 +1,4 @@
-/* myFunctions.js - ملف التوابع الوحيد للموقع (يتطلب jQuery) */
+
 var NAME_RE = /^[\u0621-\u063A\u0641-\u064A]+( +[\u0621-\u063A\u0641-\u064A]+)*$/;
 var PHONE_RE = /^09[3-689][0-9]{7}$/;
 var EMAIL_RE = /^[A-Za-z0-9._%+\-]+@[A-Za-z0-9\-]+(\.[A-Za-z0-9\-]+)*\.[A-Za-z]{2,}$/;
@@ -9,7 +9,7 @@ function isValidNationalId(s) {
   return p >= 1 && p <= 14;
 }
 
-/* يعيد milliseconds (UTC) للتاريخ yyyy-mm-dd إن كان تاريخاً فعلياً، وإلا null */
+
 function parseDate(s) {
   var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s);
   if (!m) { return null; }
@@ -27,7 +27,7 @@ function setError(id, msg) { $('#err-' + id).text(msg); return msg === ''; }
 
 function val(id) { return $.trim($('#' + id).val()); }
 
-/* يتحقق من الحقول؛ يعيد عدد أيام التأجير إن نجح التحقق، وإلا 0 */
+
 function validateForm() {
   var ok = true;
   var name = val('fullName'), nid = val('nationalId'), s = val('startDate'), e = val('endDate');
@@ -71,13 +71,13 @@ function showResult(days, s, e) {
 }
 
 $(document).ready(function () {
-  /* تأثيرات عامة في الصفحات الثلاث */
+ 
   $('.intro').hide().fadeIn(800);
   $('#nav a').on('mouseenter', function () { $(this).fadeTo(100, 0.75); })
              .on('mouseleave', function () { $(this).fadeTo(100, 1); });
   $('h3.branch').on('click', function () { $(this).next().slideToggle(); });
 
-  /* صفحة السيارات: إظهار/إخفاء التفاصيل لكل سيارة على حدة */
+  
   $('input.tog').on('click', function () { $('#det' + $(this).val()).toggle(this.checked); });
   $('input.sel').on('click', function () { $(this).closest('tr').toggleClass('picked', this.checked); });
 
